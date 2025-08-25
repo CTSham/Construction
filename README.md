@@ -68,7 +68,3 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 
 
 ---
-
-If you want, I can also create a **LICENSE file** and a **.gitignore** ready for GitHub so your repository is fully set up for deployment.  
-
-Do you want me to do that next?
