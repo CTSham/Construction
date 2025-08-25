@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Website connects homeowners with trusted contractors. Sign up today to find or offer home services easily and reliably.">
+    <title>Top-Notch – Connect Homeowners & Contractors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
-    
+    <header class="navbar">
+        <div class="logo">Top-Notch</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#how__it--works">How It Works</a>
+            <a href="#faq">FAQ</a>
+            <a href="#signup" class="btn-primary">Get Started</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Connecting Homeowners with Contractors Made Easy</h1>
+        <p>Find trusted professionals or get hired for your trade. Top-Notch makes home projects simple, reliable, and stress-free</p>
+        <a href="#signup" class="btn-primary">Join the Waitlist</a>
+    </section>
+    <section id="features" class="features">
+        <div class="feature">
+            <h3>Trusted Contractors</h3>
+            <p>Vetted professionals with proven track records.</p>
+        </div>
+        <div class="feature">
+            <h3>Seamless Matching</h3>
+            <p>Smart system pairs homeowners with the right contractor.</p>
+        </div>
+        <div class="feature">
+            <h3>Transparent Pricing</h3>
+            <p>Clear estimates and agreements upfront.</p>
+        </div>
+    </section>
+    <section id="signup" class="signup">
+        <h2>Join Top-Notch Today</h2>
+        <p>Sign up as a homeowner or contractor to be the first to know when we launch.</p>
+        <form id="sign__form">
+            <div class="tabs">
+                <button type="button" class="tab__active" data-type="homeowner">Homeowner</button>
+                <button type="button" class="tab" data-type="contractor">Contractor</button>
+            </div>
+            <input type="hidden" name="userType" id="userType" value="homeowner">
+            <input type="text" name="name" placeholder="Full__Name" required>
+            <input type="email" name="email" placeholder="Email__Address" required>
+            <input type="text" name="zip" placeholder="ZIP__Code" required>
+            <div id="trade__field" style="display:none;">
+                <input type="text" name="trade" placeholder="Your__Trade (e.g., Plumbing)">
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" name="consent" required>
+                I agree to receive updates from Top-Notch.
+            </label>
+            <button type="submit" class="btn-primary">Join Waitlist</button>
+            <p id="form__status"></p>
+        </form>
+    </section>
+    <footer>
+        <div class="footer__copyright">Copyright &copy; 2025 Corey Shamburger</div>
+    </footer>
 </body>
 </html>
