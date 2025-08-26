@@ -1,1 +1,96 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.thankyou-hero {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80") no-repeat center/cover;
+}
+
+.thankyou-hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.thankyou-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.thankyou-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.thankyou-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  background: #facc15;
+  color: #0f172a;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #fbbf24;
+}
+
+.btn-alt {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-alt:hover {
+  background: #0ea5e9;
+}
+
+.refer-message {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
 
