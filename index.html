@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website connects homeowners with trusted contractors. Sign up today to find or offer home services easily and reliably.">
-    <title>Top-Notch – Connect Homeowners & Contractors</title>
+    <title>Construction – Connect Homeowners & Contractors</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+        <script src="scripts.js"></script>
+        <script>
+        // Navbar active state
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('header.navbar nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Tab active state
+            const tabButtons = document.querySelectorAll('.tabs button');
+            tabButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    tabButtons.forEach(b => b.classList.remove('tab__active'));
+                    this.classList.add('tab__active');
+                });
+            });
+        });
+        </script>
 </head>
 <body>
     <header class="navbar">
-        <div class="logo">Top-Notch</div>
+        <div class="logo">Construction</div>
         <nav>
             <a href="#features">Features</a>
             <a href="#how__it--works">How It Works</a>
@@ -38,7 +59,7 @@
         </div>
     </section>
     <section id="signup" class="signup">
-        <h2>Join Top-Notch Today</h2>
+        <h2>Join Construction Today</h2>
         <p>Sign up as a homeowner or contractor to be the first to know when we launch.</p>
         <form id="sign__form">
             <div class="tabs">
@@ -61,7 +82,7 @@
         </form>
     </section>
     <footer>
-        <div class="footer__copyright">Copyright &copy; 2025 Corey Shamburger</div>
+        <div class="footer__copyright">Copyright &copy; 2025 Swift Design</div>
     </footer>
 </body>
 </html>
